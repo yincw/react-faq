@@ -1,1 +1,1 @@
-# react-issue
+# React FAQ

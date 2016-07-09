@@ -47,8 +47,8 @@
 17  |  React Todo List Example (Adding a Todo)  |  React Todo 列表示例（添加一个 Todo）
 18  |  React Todo List Example (Toggling a Todo)  |  React Todo 列表示例（切换一个 Todo）
 19  |  React Todo List Example (Filtering Todos)  |  React Todo 列表示例（过滤一个 Todo）
-20  |  Extracting Presentational Components (Todo, TodoList)  |  提取表象组件（Todo, TodoList）
-21  |  Extracting Presentational Components (AddTodo, Footer, FilterLink)  |  提取表象组件（Todo, TodoList）
+20  |  Extracting Presentational Components (Todo, TodoList)  |  提取展示组件（Todo, TodoList）
+21  |  Extracting Presentational Components (AddTodo, Footer, FilterLink)  |  提取展示组件（AddTodo, Footer, FilterLink）
 22  |  Extracting Container Components (FilterLink)  |  提取容器组件（FilterLink）
 23  |  Extracting Container Components (VisibleTodoList, AddTodo)  |  提取容器组件（VisibleTodoList, AddTodo）
 24  |  Passing the Store Down Explicitly via Props  |  通过 Props 显式的向下传递 Store

@@ -34,12 +34,12 @@
 04  |  The Reducer Function  |  Reducer 函数  |  -
 05  |  Writing a Counter Reducer with Tests  |  写一个计数器 Reducer 用于测试  |  -
 06  |  Store Methods: getState(), dispatch() and subscribe()  |  Store 方法：getState(), dispatch() 和 subscribe()  |  √
-07  |  Implementing Store from Scratch  |  从头开始实现 Store  |  -
-08  |  React Counter Example  |  React 计数器示例  |  -
+07  |  Implementing Store from Scratch  |  从头开始实现 Store  |  √
+08  |  React Counter Example  |  React 计数器示例  |  √
 09  |  Avoiding Array Mutations with concat(), slice() and ...spread  |  用 concat(), slice() 和 ...展开符规避数组冲突  |  -
 10  |  Avoiding Object Mutations with Object.assign() and ...spread  |  用 Object.assign() 和 ...展开符规避对象冲突  |  -
-11  |  Writing a Todo List Reducer (Adding a Todo)  |  编写一个 Todo 列表 Reducer（添加一个 Todo）  |  -
-12  |  Writing a Todo List Reducer (Toggling a Todo)  |  编写一个 Todo 列表 Reducer（切换一个 Todo）  |  -
+11  |  Writing a Todo List Reducer (Adding a Todo)  |  编写一个 Todo 列表 Reducer（添加一个 Todo）  |  √
+12  |  Writing a Todo List Reducer (Toggling a Todo)  |  编写一个 Todo 列表 Reducer（切换一个 Todo）  |  √
 13  |  Reducer Composition with Arrays  |  Reducer 的组成与数组  |  -
 14  |  Reducer Composition with Objects  |  Reducer 的组成与对象  |  -
 15  |  Reducer Composition with combineReducers()  |  Reducer 的组成与 combineReducers()  |  -

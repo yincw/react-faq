@@ -40,13 +40,13 @@
 10  |  Avoiding Object Mutations with Object.assign() and ...spread  |  用 Object.assign() 和 ...展开符规避对象冲突  |  -
 11  |  Writing a Todo List Reducer (Adding a Todo)  |  编写一个 Todo 列表 Reducer（添加一个 Todo）  |  √
 12  |  Writing a Todo List Reducer (Toggling a Todo)  |  编写一个 Todo 列表 Reducer（切换一个 Todo）  |  √
-13  |  Reducer Composition with Arrays  |  Reducer 的组成与数组  |  -
-14  |  Reducer Composition with Objects  |  Reducer 的组成与对象  |  -
-15  |  Reducer Composition with combineReducers()  |  Reducer 的组成与 combineReducers()  |  -
-16  |  Implementing combineReducers() from Scratch  |  从头开始实现 combineReducers()  |  -
-17  |  React Todo List Example (Adding a Todo)  |  React Todo 列表示例（添加一个 Todo）  |  -
-18  |  React Todo List Example (Toggling a Todo)  |  React Todo 列表示例（切换一个 Todo）  |  -
-19  |  React Todo List Example (Filtering Todos)  |  React Todo 列表示例（过滤一个 Todo）  |  -
+13  |  Reducer Composition with Arrays  |  Reducer 的组成与数组  |  √
+14  |  Reducer Composition with Objects  |  Reducer 的组成与对象  |  √
+15  |  Reducer Composition with combineReducers()  |  Reducer 的组成与 combineReducers()  |  √
+16  |  Implementing combineReducers() from Scratch  |  从头开始实现 combineReducers()  |  √
+17  |  React Todo List Example (Adding a Todo)  |  React Todo 列表示例（添加一个 Todo）  |  √
+18  |  React Todo List Example (Toggling a Todo)  |  React Todo 列表示例（切换一个 Todo）  |  √
+19  |  React Todo List Example (Filtering Todos)  |  React Todo 列表示例（过滤一个 Todo）  |  √
 20  |  Extracting Presentational Components (Todo, TodoList)  |  提取展示组件（Todo, TodoList）  |  -
 21  |  Extracting Presentational Components (AddTodo, Footer, FilterLink)  |  提取展示组件（AddTodo, Footer, FilterLink）  |  -
 22  |  Extracting Container Components (FilterLink)  |  提取容器组件（FilterLink）  |  -

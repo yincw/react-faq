@@ -1,16 +1,16 @@
 # 传递 Store
 
-* Props
-* Context
-* `<Provider>`
+* Props :construction:
+* Context :thumbsup:
+* `<Provider>` :100:
 
-## 一、通过 Props 显式的向下传递 Store
+## 一、通过 Props 显式的向下传递 Store :construction:
 
 ```javascript
 
 ```
 
-## 二、通过 Context 隐式的向下传递 Store
+## 二、通过 Context 隐式的向下传递 Store :thumbsup:
 
 ```javascript
 import React, { Component } from 'react';
@@ -293,7 +293,7 @@ ReactDOM.render(
 );
 ```
 
-## 三、从 React Redux 的 `<Provider>` 向下传递 Store
+## 三、从 React Redux 的 `<Provider>` 向下传递 Store :100:
 
 ```javascript
 import React, { Component } from 'react';

@@ -6,6 +6,7 @@
 2. 在 createStore 方法中添加第二个参数（代码如下）
 
 ```javascript
+...
 ReactDOM.render(
     <Provider store={ createStore(todoApp, window.devToolsExtension && window.devToolsExtension()) }>
         <TodoApp />
@@ -14,7 +15,7 @@ ReactDOM.render(
 );
 ```
 
-其他高级应用：
+其他高级用法：
 
 * https://github.com/zalmoxisus/redux-devtools-extension
 

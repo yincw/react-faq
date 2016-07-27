@@ -81,15 +81,35 @@ Cookie 用于与服务器进行交互，作为 HTTP 规范的一部分存在，�
 
 IE | Firefox | Chrome | Safari | Opera
 ---|---|---|---|---
-6+ | 3.5+ | 4+ | 4+ | 11.5+
+6+ | 3+ | 1+ | 4+ | 10+
 
 > API
 
-Cookie 作为 HTTP 规范的一部分存在，无原生 JS API。可使用如下一些第三方开源库获取 Cookie 信息。
+Cookie 作为 HTTP 规范的一部分存在，无原生 JS API 供使用。可使用如下一些第三方开源库获取 Cookie 信息。
 
 * [jquery.cookie](https://github.com/carhartl/jquery-cookie)
 * [store.js](https://github.com/marcuswestin/store.js)
 * [Cookies](https://github.com/ScottHamper/Cookies)
+
+```javascript
+// 设置一个 cookie 值
+Cookies.set('key', 'value');
+
+// 链式调用
+Cookies.set('key', 'value').set('hello', 'world');
+
+// 可以额外设置一些参数
+Cookies.set('key', 'value', { domain: 'www.example.com', secure: true });
+
+// 设置缓存时间
+Cookies.set('key', 'value', { expires: 600 }); // 10 分钟内到期
+Cookies.set('key', 'value', { expires: '01/01/2012' });
+Cookies.set('key', 'value', { expires: new Date(2012, 0, 1) });
+Cookies.set('key', 'value', { expires: Infinity });
+
+// 获取
+Cookies.get('key');
+```
 
 ## Web SQL Database
 

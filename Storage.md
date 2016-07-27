@@ -2,6 +2,7 @@
 
 客户端存储。
 
+
 ## Web Storage
 
 ### Local Storage - 本地存储（localStorage）
@@ -27,7 +28,7 @@ getItem(name) | 获取项
 setItem(name, value) | 设置项
 removeItem(name) | 移除项
 clear() | 清除全部
-key(index) | 得到某个索引的ke
+key(index) | 得到某个索引的 key
 length |
 toLocaleString() |
 toString() |
@@ -56,7 +57,7 @@ getItem(name) | 获取项
 setItem(name, value) | 设置项
 removeItem(name) | 移除项
 clear() | 清除全部
-key(index) | 得到某个索引的ke
+key(index) | 得到某个索引的  key
 length |
 toLocaleString() |
 toString() |
@@ -75,6 +76,20 @@ Cookie 用于与服务器进行交互，作为 HTTP 规范的一部分存在，�
 * 可跨窗口（Tab 页）共享
 * 存储大小限制不超过 4k 左右
 * 支持限制在某个路径（path）下
+
+> 浏览器兼容性
+
+IE | Firefox | Chrome | Safari | Opera
+---|---|---|---|---
+6+ | 3.5+ | 4+ | 4+ | 11.5+
+
+> API
+
+Cookie 作为 HTTP 规范的一部分存在，无原生 JS API。可使用如下一些第三方开源库获取 Cookie 信息。
+
+* [jquery.cookie](https://github.com/carhartl/jquery-cookie)
+* [store.js](https://github.com/marcuswestin/store.js)
+* [Cookies](https://github.com/ScottHamper/Cookies)
 
 ## Web SQL Database
 

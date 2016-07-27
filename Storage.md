@@ -117,12 +117,6 @@ Cookies.set('key', 'value', { expires: Infinity });
 Cookies.get('key');
 ```
 
-## Web SQL Database
-
-### Web SQL
-
-### IndexedDB
-
 ## 参考
 
 * [html5离线存储](http://www.tuicool.com/articles/ie6zmmf)

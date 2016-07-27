@@ -71,10 +71,10 @@
 05  |  Adding React Router to the Project  |  添加 React Router 到项目  |  -
 06  |  Navigating with React Router `<Link>`  |  用 React Router `<Link>` 导航  |  -
 07  |  Filtering Redux State with React Router Params  |  用 React Router 参数过滤 Redux 状态  |  -
-08  |  Using withRouter() to Inject the Params into Connected Components  |  使用 withRouter() 注入参数到连接组件  |  -
+08  |  Using withRouter() to Inject the Params into Connected Components  |  使用 withRouter() 注入参数到连接组件  |  ×
 09  |  Using mapDispatchToProps() Shorthand Notation  |   使用 mapDispatchToProps() 速记符号  |  -
-10  |  Colocating Selectors with Reducers  |  用 Reducers 控制选择器  |  -
-11  |  Normalizing the State Shape  |  正常化状态形状  |  -
+10  |  Colocating Selectors with Reducers  |  用 Reducers 控制选择器  |  ×
+11  |  Normalizing the State Shape  |  正常化状态形状  |  ×
 12  |  Wrapping dispatch() to Log Actions  |  包装 dispatch() 到日志动作  |  -
 13  |  Adding a Fake Backend to the Project  |  添加一个假后端到项目  |  -
 14  |  Fetching Data on Route Change  |  在路由改变的时候获取数据  |  -

@@ -95,7 +95,7 @@ FETCH: {
 ## Fetch 请求
 
 ```javascript
-import FL from './utils/FL'
+import { FL } from './utils/FL'
 import fetch from 'isomorphic-fetch'
 
 // GET 请求

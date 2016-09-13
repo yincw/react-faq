@@ -38,10 +38,6 @@ Cookie（产品环境）
 - token: ''   登录信息（加密，服务端使用）
 - isAuthenticated: true/false  是否认证（客户端使用）
 
-localStorage（开发环境）
-
-- appHost: 'localhost:3000'  debug 开关，业务类型（服务端开发环境使用，产品环境使用 Host）
-
 > 接口形式
 
 - /服务/方法（/productApp/linkService, GET，POST） √

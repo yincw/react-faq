@@ -16,6 +16,8 @@
 ```javascript
 {
     "Status": "",
+    "Position": "",
+    "ErrorCode": "",
     "Data": [
         {},
         {},
@@ -59,6 +61,14 @@ HTTP 状态码（3位） + 代码位置编码（4位） + 具体错误编码（3
     - 后两位代表具体业务错误编码
 
 eg: 5000101001
+
+```javascript
+{
+    "Status": "500",
+    "Position": "0101",
+    "ErrorCode": "001",
+}
+```
 
 ## Fetch 配置
 

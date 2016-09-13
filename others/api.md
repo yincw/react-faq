@@ -42,9 +42,9 @@ localStorage（开发环境）
 
 > 接口形式
 
-- /服务/方法（/productApp/linkService, GET） √
-- /服务/方法?查询字符串&查询字符串（/productApp/linkService?name=ss&id=11，POST） √
-- /服务/方法/查询值/查询值（/productApp/linkService/name/id，POST）
+- /服务/方法（/productApp/linkService, GET，POST） √
+- /服务/方法/查询值/查询值（/productApp/linkService/val1/val2， GET，PUT，DELETE）
+- /服务/方法?查询字符串&查询字符串（/productApp/linkService?arg1=val1&arg2=val2，GET） √
 
 > 状态码规则 - Status
 

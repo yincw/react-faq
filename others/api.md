@@ -111,14 +111,20 @@ fetch('/productApp/linkService', FL.FETCH.GET).then(function (response) {
 });
 
 // POST 请求
-fetch('/productApp/linkService?name=kamen&id=1', {...FL.FETCH.POST, body: JSON.stringify(data)}).then(function (response) {
+fetch('/productApp/linkService?name=kamen&id=1', {
+    ...FL.FETCH.POST,
+    body: JSON.stringify(data)
+}).then(function (response) {
     response.json();
 }).catch(function (error) {
     console.log(error);
 });
 
 // POST 请求（表单）
-fetch('/productApp/linkService?name=kamen&id=1', {...FL.FETCH.FORM, body: JSON.stringify(data)}).then(function (response) {
+fetch('/productApp/linkService?name=kamen&id=1', {
+    ...FL.FETCH.FORM,
+    body: JSON.stringify(data)
+}).then(function (response) {
     response.json();
 }).catch(function (error) {
     console.log(error);

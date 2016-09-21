@@ -1,6 +1,6 @@
 # React Router
 
-> "react-router": "^2.4.1"
+> "react-router": "^2.6.1"
 
 * `<Router>`
 * `<Route>`

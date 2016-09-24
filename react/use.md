@@ -1,6 +1,6 @@
 # 使用 React
 
-前提：开发 React 应用所需环境（Babel、Webpack）、依赖（react、react-dom）都已安装好。
+前提：开发 React 应用所需环境（Webpack、Babel）、依赖（react、react-dom）都已安装好。
 
 **第一步**：导入 react 和 react-dom 依赖包。
 
@@ -11,7 +11,7 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 ```
 
-> 写法二（推荐）：ES6 Modules 规范写法
+> 写法二（**推荐**）：ES6 Modules 规范写法
 
 ```jsx
 import React from 'react'
@@ -42,6 +42,8 @@ var Demo = React.createClass({
     },
 
     render: function() {
+        const { props } = this.props;
+
         return (
             <div>...</div>
         );
@@ -65,6 +67,8 @@ const Demo = React.createClass({
     },
 
     render () {
+        const { props } = this.props;
+
         return (
             <div>...</div>
         );
@@ -72,7 +76,7 @@ const Demo = React.createClass({
 })
 ```
 
-推荐写法。
+**推荐**写法。
 
 ```jsx
 const Demo = (props) => {
@@ -82,7 +86,13 @@ const Demo = (props) => {
 }
 ```
 
-> 写法三（推荐）：ES6 Class 写法
+```jsx
+const Demo = (props) => (
+    <div>...</div>
+)
+```
+
+> 写法三（**推荐**）：ES6 Class 写法
 
 ```jsx
 class Demo extends React.Component {
@@ -92,6 +102,8 @@ class Demo extends React.Component {
     }
 
     render () {
+        const { props } = this.props;
+
         return (
             <div>...</div>
         );
@@ -100,6 +112,7 @@ class Demo extends React.Component {
 ```
 
 ```jsx
+// 依赖第一步写法三
 class Demo extends Component {
     constructor (props) {
         super(props)
@@ -107,6 +120,8 @@ class Demo extends Component {
     }
 
     render () {
+        const { props } = this.props;
+
         return (
             <div>...</div>
         );
@@ -116,7 +131,7 @@ class Demo extends Component {
 
 **第三步**：渲染 React 组件到真实 DOM。
 
-> 写法一（推荐）
+> 写法一（**推荐**）
 
 ```jsx
 ReactDOM.render(
@@ -128,6 +143,7 @@ ReactDOM.render(
 > 写法二：ES6 写法
 
 ```jsx
+// 依赖第一步写法三
 render(
     <Demo />,
     document.getElementById('app')

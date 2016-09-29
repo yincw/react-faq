@@ -1,10 +1,10 @@
 # HTTP
 
-* [HTTP-百度百科](http://baike.baidu.com/link?url=a7mxJ4tmFgNejDUYNQHEKuaXFqnN_8cwqIkhiUNRuQtS1vCFph98J0DV9SJ4kzofPASZsC5syhJbKzn1sRp1Mq)
+* [HTTP-百度百科](http://baike.baidu.com/view/9472.htm)
 
 ## 状态码
 
-* [HTTP状态码-百度百科](http://baike.baidu.com/link?url=o5i0vlVMnUDzvkiSghQfy7k080dKVEhutsPRVs3A4LHIEveKtX722T8JNNNusDOMryBItJAuGX2ar7bry4XOQK)
+* [HTTP状态码-百度百科](http://baike.baidu.com/view/1790469.htm)
 
 ## HTTP & HTTPS
 
@@ -13,3 +13,7 @@
 ## 从输入网址到显示网页的全过程分析
 
 * [从输入网址到显示网页的全过程分析](http://blog.csdn.net/saiwaifeike/article/details/8789624)
+
+##  三次握手
+
+* [三次握手](http://baike.baidu.com/view/1003841.htm)

@@ -50,7 +50,7 @@ var Demo = React.createClass({
 });
 ```
 
-> 写法二：ES6 Modules 写法
+> 写法二（**推荐**）：ES6 Modules 写法
 
 ```jsx
 const Demo = React.createClass({
@@ -74,7 +74,7 @@ const Demo = React.createClass({
 })
 ```
 
-无状态-组件写法（**推荐**）：
+无状态-组件写法：
 
 ```jsx
 const Demo = (props) => {
@@ -84,7 +84,7 @@ const Demo = (props) => {
 }
 ```
 
-无状态且无需属性过滤-组件写法（**推荐**）：
+无状态且无需属性过滤-组件写法：
 
 ```jsx
 const Demo = (props) => (
@@ -92,7 +92,7 @@ const Demo = (props) => (
 )
 ```
 
-> 写法三：ES6 Class 写法
+> 写法三：ES6 Class 写法（**推荐**）
 
 ```jsx
 class Demo extends React.Component {

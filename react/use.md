@@ -19,8 +19,8 @@ import ReactDOM from 'react-dom';
 > 写法三：ES6 Modules 规范写法（变体）
 
 ```jsx
-import React, { Component } from 'react'
-import { render } from 'react-dom'
+import React, { Component } from 'react';
+import { render } from 'react-dom';
 ```
 
 **第二步**：定义 React 组件。
@@ -71,7 +71,7 @@ const Demo = React.createClass({
             <div>...</div>
         );
     }
-})
+});
 ```
 
 无状态-组件写法：
@@ -80,8 +80,8 @@ const Demo = React.createClass({
 const Demo = (props) => {
     return (
         <div>...</div>
-    )
-}
+    );
+};
 ```
 
 无状态且无需属性过滤-组件写法：
@@ -89,7 +89,7 @@ const Demo = (props) => {
 ```jsx
 const Demo = (props) => (
     <div>...</div>
-)
+);
 ```
 
 > 写法三：ES6 Class 写法（**推荐**）
@@ -139,7 +139,7 @@ class Demo extends Component {
 ReactDOM.render(
     <Demo />,
     document.getElementById('app')
-)
+);
 ```
 > 写法二
 
@@ -148,5 +148,5 @@ ReactDOM.render(
 render(
     <Demo />,
     document.getElementById('app')
-)
+);
 ```

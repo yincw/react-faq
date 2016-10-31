@@ -1,10 +1,8 @@
 # 使用 React
 
-前提：开发 React 应用所需环境（Webpack、Babel）、依赖（react、react-dom）都已安装好。
-
 **第一步**：导入 react 和 react-dom 依赖包。
 
-> 写法一：CommonJS 规范写法
+> 写法一，CommonJS 规范写法
 
 ```jsx
 var React = require('react');
@@ -14,11 +12,11 @@ var ReactDOM = require('react-dom');
 > 写法二（**推荐**）：ES6 Modules 规范写法
 
 ```jsx
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
 ```
 
-> 写法三：ES6 Modules 规范写法
+> 写法三：ES6 Modules 规范写法（变体）
 
 ```jsx
 import React, { Component } from 'react'
@@ -27,7 +25,7 @@ import { render } from 'react-dom'
 
 **第二步**：定义 React 组件。
 
-> 写法一：CommonJS 写法
+> 写法一，CommonJS 写法
 
 ```jsx
 var Demo = React.createClass({
@@ -52,7 +50,7 @@ var Demo = React.createClass({
 });
 ```
 
-> 写法二：ES6 写法
+> 写法二：ES6 Modules 写法
 
 ```jsx
 const Demo = React.createClass({
@@ -76,7 +74,7 @@ const Demo = React.createClass({
 })
 ```
 
-**推荐**写法。
+无状态-组件写法（**推荐**）：
 
 ```jsx
 const Demo = (props) => {
@@ -86,13 +84,15 @@ const Demo = (props) => {
 }
 ```
 
+无状态且无需属性过滤-组件写法（**推荐**）：
+
 ```jsx
 const Demo = (props) => (
     <div>...</div>
 )
 ```
 
-> 写法三（**推荐**）：ES6 Class 写法
+> 写法三：ES6 Class 写法
 
 ```jsx
 class Demo extends React.Component {
@@ -110,6 +110,8 @@ class Demo extends React.Component {
     }
 }
 ```
+
+> 写法四：ES6 Class 写法（变体）
 
 ```jsx
 // 依赖第一步写法三
@@ -139,8 +141,7 @@ ReactDOM.render(
     document.getElementById('app')
 )
 ```
-
-> 写法二：ES6 写法
+> 写法二
 
 ```jsx
 // 依赖第一步写法三

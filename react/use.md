@@ -74,7 +74,7 @@ const Demo = React.createClass({
 });
 ```
 
-无状态-组件写法：
+无需状态，需过滤属性-组件写法：
 
 ```jsx
 const Demo = (props) => {
@@ -84,7 +84,7 @@ const Demo = (props) => {
 };
 ```
 
-无状态且无需属性过滤-组件写法：
+无需状态，无需过滤属性-组件写法：
 
 ```jsx
 const Demo = (props) => (
@@ -93,6 +93,11 @@ const Demo = (props) => (
 ```
 
 > 写法三：ES6 Class 写法（**推荐**）
+
+推荐阅读：
+
+- https://babeljs.io/blog/2015/06/07/react-on-es6-plus
+- http://blog.mcbird.cn/2015/09/11/react-on-es6-plus/
 
 ```jsx
 class Demo extends React.Component {

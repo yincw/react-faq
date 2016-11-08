@@ -52,7 +52,7 @@ const UserIsAuthenticated = UserAuthWrapper({
 
 > 返回 - Returns
 
-用于 configObject 之后， `UserAuthWrapper` 返回一个函数，可用于身份验证和授权检查的包装组件。函数也有额外的如下属性：
+应用 configObject 之后， `UserAuthWrapper` 返回一个函数，可用于身份验证和授权检查的包装组件。函数也有额外的如下属性：
 
 键值对 | 类型 | 说明
 ---|---|---

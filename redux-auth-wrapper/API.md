@@ -2,15 +2,25 @@
 
 > "redux-auth-wrapper": "^0.8.0",
 
+## 推荐阅读
+
+- https://github.com/mjrussell/redux-auth-wrapper#api
+
 ## 动机
 
 首先，在 React-Router 和 Redux 中处理验证和授权视乎很容易。毕竟，我们有一个 onEnter 方法。我们不应该使用它吗？
 
 `onEnter` 是伟大的，在某些情况下很有用。然而，这里有一些常见的身份验证和授权的问题， `onEnter` 并不能解决：
 
-- 从 redux 存储数据中解决认证/授权（有一些 [方法]()）
+- 从 redux 存储数据中解决认证/授权（有一些 [方法](https://github.com/CrocoDillon/universal-react-redux-boilerplate/blob/master/src/routes.jsx#L8)）
 - 如果 store 更新后重新检查认证/授权（但不是当前路由）
 - 如果在一个受保护的路由中改变一个子路由时重新检查认证/授权（React Router 2.0 现在支持 `onChange`）
+
+另一种方法是使用高阶组件。
+
+> A higher-order component is just a function that takes an existing component and returns another component that wraps it
+
+Redux-auth-wrapper 提供高阶组件，易于阅读和应用身份验证和授权约束到你的组件。
 
 ## UserAuthWrapper(configObject)(DecoratedComponent)
 

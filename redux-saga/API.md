@@ -8,9 +8,8 @@
 - http://leonshi.com/redux-saga-in-chinese/docs/api/index.html
 - https://zhuanlan.zhihu.com/p/23012870
 - https://zhuanlan.zhihu.com/p/21399936
-- https://zhuanlan.zhihu.com/p/22405838
-- https://www.zhihu.com/question/39456161
 - https://www.zhihu.com/question/50124943?from=profile_question_card
+- https://zhuanlan.zhihu.com/p/22405838
 - http://wecodetheweb.com/2016/01/23/handling-async-in-redux-with-sagas/
 
 ## 中间件 API - Middleware API

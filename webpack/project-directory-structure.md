@@ -5,8 +5,6 @@
 - api // 模拟数据目录
 -   \- [filename].json
 - app // 生产环境目录
-  |- api
-  |    \- [filename].json
   |- resources
   |     |- js
   |     |   |- vendor-[hash].js
@@ -26,8 +24,9 @@
   \- favicon.ico
 - src // 开发环境目录
   |- components // 展示组件目录
-  |     |- Icon
-  |     |- Button
+  |     |- Header
+  |     |- Sidebar
+  |     |- Container
   |     |- ...
   |     \- Index
   |         |- js
@@ -40,25 +39,25 @@
   |             \- [filename].png
   |- containers // 容器组件目录
   |     |- ...
-  |     |- App.js
   |     \- Index.js
   |- reducers // Redux（规则）定义目录 - 负责接收、处理 action，返回新的 state
   |     |- ...
   |     \- index.js // 根 Reducer
   |- actions // Redux（动作）定义目录 - 定义 action 及需要携带的数据
-  |     \- ...
+  |     |- ...
+  |     \- index.js // 根 Action
   |- sagas  // 业务逻辑代码目录 - 负责协调异步操作的目录
   |     |- ...
-  |     \- index.js // 根 Sagas
+  |     \- index.js // 根 Saga
   |- store  // 数据存储目录
-  |     |- initialState.js
+  |     |- initialState.js  // 应用程序初始化状态
   |     \- configureStore.js // 应用程序 Store 配置文件
   |- utils  // 实用工具
   |     |- FL.js
   |     |- interceptor.js
-  |     |- localStorage.js
-  |     \- auth.js
-  |- index.js // 应用程序根（混合展示组件、容器组件、Store、API）
+  |     \- localStorage.js
+  |- app.js // 应用程序根
+  |- index.js // React Hot Loader 配置文件
   |- index.ejs // HTML 文件模板
   \- favicon.ico
 ```

@@ -48,18 +48,18 @@ fork([context, fn], ...args) | -
 spawn(fn, ...args) | -
 spawn([context, fn], ...args) | -
 join(task) | -
-cancel(task) | -
+**cancel(task)** | 创建一条 Effect 描述信息，指示 middleware 取消先前被 fork 的 task。
 **select(selector, ...args)** | 创建一条 Effect 描述信息，指示 middleware 调用提供的选择器获取 Store state 上的数据（例如，返回 selector(getState(), ...args) 的结果）。
 actionChannel(pattern, [buffer]) | -
 flush(channel) | -
-cancelled() | -
+**cancelled()** | 创建一条 Effect 描述信息，指示 middleware 回传这个 generator 是否已经被取消。通常你使用这个 Effect 在 finally 区块执行取消特定的代码。
 
 ## Effect 组合器 - Effect combinators
 
 方法 | 说明
 ---|---
-race(effects) | 创建一条 Effect 描述信息，指示 middleware 在多个 Effect 之间执行一个 race（类似 Promise.race([...]) 的行为）。【只处理最先完成的任务】
-[...effects] (并行的 effects) | 创建一条 Effect 描述信息，指示 middleware 并行执行多个 Effect，并等待所有 Effect 完成。
+**race(effects)** | 创建一条 Effect 描述信息，指示 middleware 在多个 Effect 之间执行一个 race（类似 Promise.race([...]) 的行为）。【只处理最先完成的任务】
+**[...effects]** (并行的 effects) | 创建一条 Effect 描述信息，指示 middleware 并行执行多个 Effect，并等待所有 Effect 完成。
 
 ## 接口 - Interfaces
 
@@ -74,7 +74,7 @@ SagaMonitor | -
 
 方法 | 说明
 ---|---
-**runSaga(iterator, options)** | 允许在 Redux middleware 环境外部启动 sagas。当你想将 Saga 连接至外部的输入和输出（译注：即在外部执行 Saga）时，而不是 store 的 action，会很有用。
+runSaga(iterator, options) | 允许在 Redux middleware 环境外部启动 sagas。当你想将 Saga 连接至外部的输入和输出（译注：即在外部执行 Saga）时，而不是 store 的 action，会很有用。
 
 ## 实用工具 - Utils
 

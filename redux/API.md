@@ -7,6 +7,13 @@
 * Reducers
 * Middleware
 
+## 推荐阅读
+
+- http://staltz.com/unidirectional-user-interface-architectures.html
+- https://www.smashingmagazine.com/2016/06/an-introduction-to-redux/
+- https://css-tricks.com/learning-react-redux/
+- https://github.com/jasonslyvia/a-cartoon-intro-to-redux-cn
+
 > API
 
 * `createStore(reducer, [initialState])` 创建 store

@@ -13,6 +13,9 @@
 - https://www.smashingmagazine.com/2016/06/an-introduction-to-redux/
 - https://css-tricks.com/learning-react-redux/
 - https://github.com/jasonslyvia/a-cartoon-intro-to-redux-cn
+- http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html
+- http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_two_async_operations.html
+- http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_three_react-redux.html
 
 > API
 

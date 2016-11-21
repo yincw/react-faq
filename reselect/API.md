@@ -15,6 +15,11 @@
 
 ## API
 
+- createSelector(...inputSelectors | [inputSelectors], resultFunc)
+- defaultMemoize(func, equalityCheck = defaultEqualityCheck)
+- createSelectorCreator(memoize, ...memoizeOptions)
+- createStructuredSelector({inputSelectors}, selectorCreator = createSelector)
+
 ### createSelector(...inputSelectors | [inputSelectors], resultFunc)
 
 Takes one or more selectors, or an array of selectors, computes their values and passes them as arguments to `resultFunc`.

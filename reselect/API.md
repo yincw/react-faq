@@ -92,7 +92,7 @@ const totalSelector = createSelector(
 
 `defaultMemoize` memoizes the function passed in the func parameter. It is the memoize function used by `createSelector`.
 
-`defaultMemoize` 键通过 func 参数传递函数。这是由使用 `createSelector` 的键函数。
+`defaultMemoize` 通过 func 参数传递可记忆的函数。这是由使用 `createSelector` 的可记忆的函数。
 
 `defaultMemoize` has a cache size of 1. This means it always recalculates when the value of an argument changes.
 
@@ -143,7 +143,7 @@ const customSelector = customSelectorCreator(
 
 Internally `customSelector` calls the memoize function as follows:
 
-在内部， `customSelector` 调用 memoize 函数如下：
+在内部， `customSelector` 调用可记忆的函数如下：
 
 ```
 customMemoize(resultFunc, option1, option2, option3)

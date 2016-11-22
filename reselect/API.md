@@ -5,13 +5,24 @@
 - Selectors can compute derived data, allowing Redux to store the minimal possible state.
 - 选择器可以计算派生数据, 允许 Redux 的 store 最小可能的 state。
 - Selectors are efficient. A selector is not recomputed unless one of its arguments change.
-- 选择器是有效的。选择器不重新计算，除非改变它的一个参数。
+- 选择器是有效的。选择器不重新计算，除非改变它其中的一个参数。
 - Selectors are composable. They can be used as input to other selectors.
 - 选择器是可组合的。他们可以用作输入其他选择器。
+
+## 使用目的
+
+- 数据的过滤和筛选
+- reselect：store 的 select 方案，用于提取数据的筛选逻辑，让组件保持简单，选 reselect 看重的是 **可组合性** 和 **缓存机制**。
+- reselect 这个项目提供了带 cache 功能的 selector。如果 Store/State 和构造 view 的参数没有变化，那么每次 Component 获取的数据都将来自于上次调用/计算的结果。得益于 Store/State Immutable 的本质，状态变化的检测是非常高效的。
 
 ## 推荐阅读
 
 - https://github.com/reactjs/reselect#api
+- http://www.jianshu.com/p/3334467e4b32
+- https://github.com/sorrycc/blog/issues/1?utm_source=tuicool&utm_medium=referral
+- https://zhuanlan.zhihu.com/p/22405838
+- https://segmentfault.com/a/1190000006120707
+- https://segmentfault.com/a/1190000003811803
 
 ## API
 

@@ -1,6 +1,6 @@
 # Redux Auth Wrapper
 
-> "redux-auth-wrapper": "^0.8.0",
+> "redux-auth-wrapper": "^0.9.0",
 
 ## 推荐阅读
 
@@ -38,6 +38,7 @@ Redux-auth-wrapper 提供高阶组件，易于阅读和应用身份验证和授�
 `[wrapperDisplayName]` | String | 可选，描述这种身份验证或授权检查的名称。它将显示在 React-devtools。默认为 `UserAuthWrapper`。
 `[predicate(authData): Bool]` | Function | 可选，通过 `authSelector` 返回的参数的函数。如果它的求值为 false，浏览器将被重定向到 `failureRedirectPath`，否则将渲染 `DecoratedComponent` 。默认情况下，如果 `authData` 为 {} 或 null，它返回 false。
 `[allowRedirectBack]` | Bool | 可选， 是否应用 `redirect` 查询参数到 `failureRedirectPath` 的布尔值。默认为 `true`。
+`[propMapper]` | Function | 可选功能，这需要 props 传递到包装组件 并通过 DecoratedComponent，LoadingComponent 和 FailureComponent 返回这些 props。
 
 使用实例：
 

@@ -2,11 +2,11 @@
 
 方法 | 说明
 ---|---
-createAction(type, payloadCreator = Identity, ?metaCreator) | -
-createActions(?actionMap, ?...identityActions) | -
-handleAction(type, reducerMap = Identity, defaultState) | -
-handleActions(reducerMap, defaultState) | -
-combineActions(...types) | -
+createAction(type, payloadCreator = Identity, ?metaCreator) | 包装一个 action 的创建者
+createActions(?actionMap, ?...identityActions) | 返回一个 action 类型到 action 创建者的映射对象。
+handleAction(type, reducerMap = Identity, defaultState) | 包装一个 reducer，它只处理 Flux 标准的 Actions 的某些类型。
+handleActions(reducerMap, defaultState) | 使用 `handleAction()` 创建多个 reducers，并将其合并成一个 reducer 来处理多个 actions。
+combineActions(...types) | 合并任意数量的 action 类型或 action 创建者。
 
 
 > `createAction(type, payloadCreator = Identity, ?metaCreator)`
@@ -39,7 +39,7 @@ import { createAction } from 'redux-actions'
 
 ~~Returns an object mapping action types to action creators. The keys of this object are camel-cased from the keys in `actionMap` and the string literals of `identityActions`; the values are the action creators.~~
 
-返回一个映射 action 类型到 action 创建者的对象。在 `actionMap` 中，这个对象的键是驼峰式的，且 `identityActions` 是字符串常量。值是 action 的创建者。
+返回一个 action 类型到 action 创建者的映射对象。在 `actionMap` 中，这个对象的键是驼峰式的，且 `identityActions` 是字符串常量。值是 action 的创建者。
 
 ~~`actionMap` is an optional object and a recursive data structure, with action types as keys, and whose values **must** be either~~
 
@@ -66,7 +66,7 @@ import { createActions } from 'redux-actions'
 
 ~~Wraps a reducer so that it only handles Flux Standard Actions of a certain type.~~
 
-包装一个 reducer，它只处理 Flux 标准的 Actions 的某种类型。
+包装一个 reducer，它只处理 Flux 标准的 Actions 的某些类型。
 
 ~~If a `reducer` function is passed, it is used to handle both normal actions and failed actions. (A failed action is analogous to a rejected promise.) You can use this form if you know a certain type of action will never fail, like the increment example above.~~
 
